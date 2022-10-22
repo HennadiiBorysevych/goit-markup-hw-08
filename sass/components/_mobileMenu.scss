@@ -1,4 +1,4 @@
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .mobile-btn{
         background-color: var(--btn-text-color);
         outline: none;
@@ -26,7 +26,7 @@
         height: 796px;
         background-color: var(--btn-text-color);
         margin: 0 auto;  
-        padding: 48px 100px 48px 40px ;    
+        padding: 48px 83px 48px 40px ;    
 
         }
     .mobile-nav,
@@ -98,5 +98,9 @@
         color: #2196F3;
     }
 }
-    
-
+@media screen and (min-width:768px) {
+    .mobile-menu-window{
+        display: none;
+    }
+}
+        
