@@ -3,6 +3,7 @@
     
     text-transform: none;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .employee__position {
@@ -17,39 +18,50 @@
     text-align: center;
     background-color: var(--btn-text-color);
     padding: 30px;
-
+    @media screen and (max-width:768px) {
+        padding-bottom: 24px;
+        border-radius: 0px 0px 4px 4px;
+    }
 }
 
 .section--bg {
     background-color: var(--background-color-secondary);
-
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+    }
 }
 
 .team-list__item {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 4px 4px;
-
-    &:not(:first-child) {
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @media screen and (min-width:1200px){
+        width: 270px;
+        &:not(:first-child) {
             margin-left: 30px;
         }
+    }
+   
 }
-
-
-
-.team-list__item {
-    width: 270px;
-}
-
 .team-list {
-    display: flex;
-     
+    width: 100%;
     @extend %list;
-
     background-color: var(--background-color-secondary);
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 .employee-social-list,
 .company-social-list {
+    @media screen and (max-width:768px) {
+        justify-content: center;
+    }
     display: flex;
     gap: 10px;
 

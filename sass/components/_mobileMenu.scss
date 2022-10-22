@@ -1,0 +1,102 @@
+@media screen and (max-width:767px) {
+    .mobile-btn{
+        background-color: var(--btn-text-color);
+        outline: none;
+        border: none;
+        fill: currentColor;
+        margin-left: auto;
+
+
+        &:hover,
+        &:focus{
+            fill: var(--order-btn-active);
+        }
+    }
+    [aria-expanded="false"]{
+        display: none;
+    }
+    .mobile-menu {
+        &.is-open{
+            display: block;
+        }
+        display: none;
+        position: absolute;
+        top:100%;
+        left: 0;
+        height: 796px;
+        background-color: var(--btn-text-color);
+        margin: 0 auto;  
+        padding: 48px 100px 48px 40px ;    
+
+        }
+    .mobile-nav,
+    .mobile-contacts{
+        list-style: none;
+
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-nav__item{
+        margin-bottom: 32px;
+
+        &:last-child{
+            margin-bottom: 302px;
+        }
+    }
+    .mobile-nav__link{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+    }
+    .mobile-contacts{
+        margin-bottom: 64px;
+    }
+    .mobile-contacts__item:first-child{
+        margin-bottom: 32px;
+    }
+    .mobile-contacts__link--hovered{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;        
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: #2196F3;
+    }
+    .mobile-contacts__link--mail{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        
+        color: #757575;
+        text-decoration: none;
+        }
+        .mobile-links{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    .mobile-links__link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        
+        color: #2196F3;
+    }
+}
+    
+
