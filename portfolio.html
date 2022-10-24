@@ -21,56 +21,130 @@
   <body>
     <header class="page-header">
       <div class="container container--header--display">
-        <nav class="navigation">
-          <a href="./index.html" class="logo"
-            ><span class="logo--blue">Web</span>Studio</a
-          >
-          <ul class="site-nav">
-            <li class="site-nav__item">
+        <div class="tablet-header">
+          <nav class="navigation">
+            <a href="./index.html" class="logo"
+              ><span class="logo--blue">Web</span>Studio</a
+            >
+            <div class="mobile-menu-window">
+              <button class="mobile-btn" type="button">
+                <svg width="40" height="40" aria-label="Перемикач меню">
+                  <use
+                    class="icon-open js-open-menu"
+                    href="./images/icons.svg#menu-open"
+                    aria-expanded="true"
+                  ></use>
+                </svg>
+              </button>
+              <div class="mobile-window">
+                <div class="mobile-menu js-menu-container">
+                  <button
+                    class="mobile-btn icon-close js-close-menu"
+                    type="button"
+                  >
+                    <svg width="40" height="40" aria-label="Перемикач меню">
+                      <use class="" href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                  </button>
+                  <ul class="mobile-nav">
+                    <li class="mobile-nav__item">
+                      <a
+                        href="./index.html"
+                        class="mobile-nav__link mobile-nav__link--hovered"
+                        >Студія</a
+                      >
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a
+                        href="./portfolio.html"
+                        class="mobile-nav__link mobile-nav__link--blue"
+                        >Портфоліо</a
+                      >
+                    </li>
+                    <li class="mobile-nav__item">
+                      <a
+                        href="#"
+                        class="mobile-nav__link mobile-nav__link--hovered"
+                        >Контакти</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="mobile-contacts">
+                    <li class="mobile-contacts__item">
+                      <a
+                        href="tel:+380961111111"
+                        class="mobile-contacts__link mobile-contacts__link--hovered"
+                      >
+                        +38 096 111 11 11</a
+                      >
+                    </li>
+                    <li class="mobile-contacts__item">
+                      <a
+                        href="mailto:info@devstudio.com"
+                        class="mobile-contacts__link mobile-contacts__link--mail"
+                      >
+                        info@devstudio.com</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="mobile-links">
+                    <li>
+                      <a class="mobile-links__link" href="#">Instagram</a>
+                    </li>
+                    <li><a class="mobile-links__link" href="#">Twitter</a></li>
+                    <li><a class="mobile-links__link" href="#">Facebook</a></li>
+                    <li><a class="mobile-links__link" href="#">LinkedIn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a
+                  href="./index.html"
+                  class="site-nav__link site-nav__link--blue"
+                  >Студія</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--hovered"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link site-nav__link--hovered"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
               <a
-                href="./index.html"
-                class="site-nav__link site-nav__link--hovered"
-                >Студія</a
+                href="mailto:info@devstudio.com"
+                class="contacts__link contacts__link--hovered"
+              >
+                <svg width="16" height="12">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="site-nav__item">
+            <li class="contacts__item">
               <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--blue"
-                >Портфоліо</a
+                href="tel:+380961111111"
+                class="contacts__link contacts__link--hovered"
               >
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link site-nav__link--hovered"
-                >Контакти</a
+                <svg width="10" height="16">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts__link contacts__link--hovered"
-            >
-              <svg width="16" height="12">
-                <use href="./images/icons.svg#email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a
-              href="tel:+380961111111"
-              class="contacts__link contacts__link--hovered"
-            >
-              <svg width="10" height="16">
-                <use href="./images/icons.svg#phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -109,13 +183,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img.jpg"
-                    alt="Екран ноутбука с веб-сайтом Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project1.jpg   1x,
+                        ./images/portfolio/mobile/project1@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project1.jpg"
+                      alt="Екран ноутбука с веб-сайтом Технокряк"
+                  /></picture>
                   <p class="work-list__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -131,13 +209,19 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img2.jpg"
-                    alt="Два баскетболіста"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project2.jpg   1x,
+                        ./images/portfolio/mobile/project2@2.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/portfolio/mobile/project2.jpg"
+                      alt="Два баскетболіста"
+                    />
+                  </picture>
                   <p class="work-list__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Molestiae consectetur laboriosam deleniti iusto eos adipisci
@@ -156,13 +240,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img3.jpg"
-                    alt="Logo ресторану Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project3.jpg   1x,
+                        ./images/portfolio/mobile/project3@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project3.jpg"
+                      alt="Logo ресторану Seafood"
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
                     dolores tempora, iste quasi molestiae, cum voluptatum
@@ -179,13 +267,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img9.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project4.jpg   1x,
+                        ./images/portfolio/mobile/project4@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project4.jpg"
+                      alt="Навушники"
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta voluptate a repudiandae doloribus ex est deserunt nemo
@@ -202,13 +294,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img4.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project5.jpg   1x,
+                        ./images/portfolio/mobile/project5@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project5.jpg"
+                      alt="Дві коробки"
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quibusdam ullam, excepturi dicta, exercitationem
@@ -225,13 +321,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img5.jpg"
-                    alt="Екран ноутбука з веб-сайтом Inspiration has no Borders "
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project6.jpg   1x,
+                        ./images/portfolio/mobile/project6@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project6.jpg"
+                      alt="Екран ноутбука з веб-сайтом Inspiration has no Borders "
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quod sequi quam doloremque amet rerum non consequuntur porro
@@ -247,13 +347,15 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img6.jpg"
-                    alt="Розгорнута книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project7.jpg   1x,
+                        ./images/portfolio/mobile/project7@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img src="./images/img6.jpg" alt="Розгорнута книга"
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Aliquam facilis ab debitis eum alias laborum? Quae itaque
@@ -269,13 +371,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img7.jpg"
-                    alt="Logo проєкту LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project8.jpg   1x,
+                        ./images/portfolio/mobile/project8@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project8.jpg"
+                      alt="Logo проєкту LAB"
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Est, debitis. Omnis a aperiam nesciunt in! Maiores adipisci
@@ -292,13 +398,17 @@
             <li class="work-list__item">
               <a href="#" class="work-list__link">
                 <div class="overlay">
-                  <img
-                    class="block"
-                    src="./images/img8.jpg"
-                    alt="Зображення додатку Growing Business в ноутбукі"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/project9.jpg   1x,
+                        ./images/portfolio/mobile/project9@2.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      src="./images/portfolio/mobile/project9.jpg"
+                      alt="Зображення додатку Growing Business в ноутбукі"
+                  /></picture>
                   <p class="work-list__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                     aut temporibus dicta quaerat perferendis delectus accusamus
@@ -318,73 +428,75 @@
     </main>
     <footer class="page-footer">
       <div class="container container--position">
-        <address class="address">
-          <a href="./index.html" class="footer-logo"
-            ><span class="footer-logo--white">Web</span>Studio</a
-          >
-          <ul class="address-list">
-            <li class="address-list__item">
-              <a
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="location"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="address-list__item">
-              <a href="mailto:info@devstudio.com" class="address-list__link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-list__item">
-              <a href="tel:+380961111111" class="address-list__link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-        <div>
-          <h3 class="join-title">Приєднуйтесь</h3>
-          <ul class="company-social-list">
-            <li class="company-social-list__item">
-              <a
-                href="https://www.instagram.com/"
-                class="company-social-list__link company-social-list__link--bg"
-              >
-                <svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="company-social-list__item">
-              <a
-                href="https://www.twitter.com/"
-                class="company-social-list__link company-social-list__link--bg"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="company-social-list__item">
-              <a
-                href="https://www.facebook.com/"
-                class="company-social-list__link company-social-list__link--bg"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="company-social-list__item">
-              <a
-                href="https://www.linkedin.com/"
-                class="company-social-list__link company-social-list__link--bg"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-footer"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="tablet-footer">
+          <address class="address">
+            <a href="./index.html" class="footer-logo"
+              ><span class="footer-logo--white">Web</span>Studio</a
+            >
+            <ul class="address-list">
+              <li class="address-list__item">
+                <a
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="location"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="mailto:info@devstudio.com" class="address-list__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-list">
+            <h3 class="join-title">Приєднуйтесь</h3>
+            <ul class="company-social-list">
+              <li class="company-social-list__item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="company-social-list__link company-social-list__link--bg"
+                >
+                  <svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="company-social-list__item">
+                <a
+                  href="https://www.twitter.com/"
+                  class="company-social-list__link company-social-list__link--bg"
+                  ><svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="company-social-list__item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="company-social-list__link company-social-list__link--bg"
+                  ><svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="company-social-list__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="company-social-list__link company-social-list__link--bg"
+                  ><svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="subscribe-form">
           <h3 class="join-title">Підпишіться на розсилку</h3>
@@ -404,5 +516,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -27,21 +27,30 @@
               ><span class="logo--blue">Web</span>Studio</a
             >
             <div class="mobile-menu-window">
-              <button class="mobile-btn" type="button">
-                <svg width="40" height="40" aria-label="Перемикач меню">
+              <button
+                class="mobile-btn js-open-menu"
+                type="button"
+                aria-label="Перемикач меню"
+              >
+                <svg width="40" height="40">
                   <use
-                    class="icon-open js-open-menu"
+                    class="icon-open"
                     href="./images/icons.svg#menu-open"
                     aria-expanded="true"
-                  ></use>
-                  <use
-                    class="icon-close js-close-menu"
-                    href="./images/icons.svg#menu-close"
                   ></use>
                 </svg>
               </button>
               <div class="mobile-window">
                 <div class="mobile-menu js-menu-container">
+                  <button
+                    class="mobile-btn icon-close js-close-menu"
+                    aria-label="Перемикач меню"
+                    type="button"
+                  >
+                    <svg width="40" height="40">
+                      <use class="" href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                  </button>
                   <ul class="mobile-nav">
                     <li class="mobile-nav__item">
                       <a
@@ -266,22 +275,22 @@
               <picture>
                 <source
                   srcset="
-                    ./images/mobile/mobile-team1.jpg    1x,
-                    ./images/mobile/mobile-team1@2x.jpg 2x
+                    ./images/teammember1.jpg    1x,
+                    ./images/teammember1@2x.jpg 2x
                   "
-                  media="(max-width:768px)" />
+                  media="(min-width:1200px)" />
                 <source
                   srcset="
                     ./images/tablet/tablet-team1.jpg    1x,
                     ./images/tablet/tablet-team1@2x.jpg 2x
                   "
-                  media="(max-width:1200px)" />
+                  media="(min-width:768px)" />
                 <source
                   srcset="
-                    ./images/teammember1.jpg    1x,
-                    ./images/teammember1@2x.jpg 2x
+                    ./images/mobile/mobile-team1.jpg    1x,
+                    ./images/mobile/mobile-team1@2x.jpg 2x
                   "
-                  media="(min-width:1200px)" />
+                  media="(max-width:767px)" />
                 <img
                   src="./images/mobile/mobile-team1.jpg"
                   alt="Ігор Дем'яненко"
