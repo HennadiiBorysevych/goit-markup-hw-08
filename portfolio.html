@@ -27,10 +27,14 @@
               ><span class="logo--blue">Web</span>Studio</a
             >
             <div class="mobile-menu-window">
-              <button class="mobile-btn" type="button">
-                <svg width="40" height="40" aria-label="Перемикач меню">
+              <button
+                class="mobile-btn js-open-menu"
+                type="button"
+                aria-label="Перемикач меню"
+              >
+                <svg width="40" height="40">
                   <use
-                    class="icon-open js-open-menu"
+                    class="icon-open"
                     href="./images/icons.svg#menu-open"
                     aria-expanded="true"
                   ></use>
@@ -40,9 +44,10 @@
                 <div class="mobile-menu js-menu-container">
                   <button
                     class="mobile-btn icon-close js-close-menu"
+                    aria-label="Перемикач меню"
                     type="button"
                   >
-                    <svg width="40" height="40" aria-label="Перемикач меню">
+                    <svg width="40" height="40">
                       <use class="" href="./images/icons.svg#menu-close"></use>
                     </svg>
                   </button>
@@ -50,14 +55,14 @@
                     <li class="mobile-nav__item">
                       <a
                         href="./index.html"
-                        class="mobile-nav__link mobile-nav__link--hovered"
+                        class="mobile-nav__link mobile-nav__link--blue"
                         >Студія</a
                       >
                     </li>
                     <li class="mobile-nav__item">
                       <a
                         href="./portfolio.html"
-                        class="mobile-nav__link mobile-nav__link--blue"
+                        class="mobile-nav__link mobile-nav__link--hovered"
                         >Портфоліо</a
                       >
                     </li>
@@ -88,12 +93,18 @@
                     </li>
                   </ul>
                   <ul class="mobile-links">
-                    <li>
+                    <li class="mobile-links__item">
                       <a class="mobile-links__link" href="#">Instagram</a>
                     </li>
-                    <li><a class="mobile-links__link" href="#">Twitter</a></li>
-                    <li><a class="mobile-links__link" href="#">Facebook</a></li>
-                    <li><a class="mobile-links__link" href="#">LinkedIn</a></li>
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-links__item">
+                      <a class="mobile-links__link" href="#">LinkedIn</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -102,14 +113,14 @@
               <li class="site-nav__item">
                 <a
                   href="./index.html"
-                  class="site-nav__link site-nav__link--hovered"
+                  class="site-nav__link site-nav__link--blue"
                   >Студія</a
                 >
               </li>
               <li class="site-nav__item">
                 <a
                   href="./portfolio.html"
-                  class="site-nav__link site-nav__link--blue"
+                  class="site-nav__link site-nav__link--hovered"
                   >Портфоліо</a
                 >
               </li>
