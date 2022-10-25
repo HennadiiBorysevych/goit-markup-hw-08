@@ -665,7 +665,7 @@ textarea:focus {
     color: var(--primary-text-color);
   }
 }
-@media screen and (min-width: 767px) and (min-width: 767px) {
+@media screen and (min-width: 767px) and (min-width: 768px) {
   .tablet-header {
     display: flex;
     align-items: center;
@@ -939,7 +939,7 @@ textarea:focus {
     display: flex;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -1086,7 +1086,7 @@ textarea:focus {
   background-color: var(--btn-text-color);
   padding: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .employee {
     padding-bottom: 24px;
     border-radius: 0px 0px 4px 4px;
@@ -1138,7 +1138,7 @@ textarea:focus {
   gap: 10px;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .employee-social-list,
 .company-social-list {
     justify-content: center;
@@ -1392,7 +1392,7 @@ input[placeholder=E-mail] {
 .subscribe-form__button:hover, .subscribe-form__button:focus {
   background-color: var(--order-btn-active);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-form__button {
     margin-left: auto;
     margin-right: auto;
