@@ -15,7 +15,7 @@
     align-items: baseline;
 }
 }
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     .tablet-footer {
         display: flex;
         justify-content: space-between;
@@ -111,7 +111,7 @@
         }
 .join-title {
     font-style: normal;
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1199px) {
                 text-align: center;
             }
         
@@ -173,7 +173,7 @@ input[placeholder="E-mail"] {
     padding-left: 16px;
 
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1199px) {
         .subscribe-form{
             display: flex;
             flex-direction: column;
