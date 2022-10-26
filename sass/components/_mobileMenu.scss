@@ -22,12 +22,12 @@
             display: block;
         }
         display: none;
-        position: absolute;
-        width: 100%;
+        position: fixed;
+        width: 100vw;
         top:0;
         left: 0;
         z-index: 1;
-        height: 796px;
+        height:100vh ;
         background-color: var(--btn-text-color);
         margin: 0 auto;  
         padding-top: 48px;

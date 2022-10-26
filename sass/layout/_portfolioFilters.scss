@@ -30,6 +30,7 @@
 }
 .filter-list{
     @extend %list
+    
 }
 @media screen and (max-width:767px){
     .filter-list {
@@ -38,6 +39,7 @@
         flex-wrap: wrap;
         gap: 8px;
         margin-bottom: 40px;
+
     }
 
     .filter-list__item:nth-child(-n+3){
@@ -46,7 +48,7 @@
     
 }
 @media screen and (max-width:767px) {
-    .work-list__item:not(:first-child){
+    .work-list__item:not(:last-child){
         margin-bottom: 30px;
     }
 }
@@ -54,12 +56,16 @@
     .filter-list {
         display: flex;
         justify-content: center;
-
         margin-bottom: 34px;
+
+        @media screen and (min-width:1200px) {
+                    margin-bottom: 50px;
+                }
         }
     
     .filter-list__item:not(:first-child) {
             margin-left: 8px;
         }
 }
+
 

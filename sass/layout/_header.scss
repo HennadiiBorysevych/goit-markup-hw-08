@@ -40,7 +40,7 @@
         @include font(700, 24px, 1.16);
         }
 
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1199px) {
         @include font(700, 24px, 1.16);
         padding-top: 26px ;
         padding-bottom: 26px;
@@ -79,7 +79,7 @@
         // padding-bottom: 26px;
         
     }
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1199px) {
         gap: 50px;
     }
     display: flex;
@@ -160,7 +160,7 @@
                 margin-left: 93px;
             }
         }
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width:1199px) {
             .contacts{
                 margin-left: auto;
                 display: flex;
