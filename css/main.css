@@ -378,7 +378,6 @@ textarea:focus {
     display: flex;
     height: 32vh;
     justify-content: space-between;
-    margin-bottom: 25px;
   }
   .mobile-contacts {
     flex-direction: column;
@@ -397,7 +396,7 @@ textarea:focus {
 .mobile-nav__link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: calc(24px + 2.0860495437vw);
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
@@ -416,7 +415,7 @@ textarea:focus {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: calc(14px + 2.6075619296vw);
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -427,7 +426,7 @@ textarea:focus {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: calc(14px + 1.3037809648vw);
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
@@ -447,7 +446,7 @@ textarea:focus {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: calc(10px + 1.3037809648vw);
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
