@@ -64,8 +64,7 @@
         
     }
 }
-.employee-social-list,
-.company-social-list {
+.social-list {
     @media screen and (max-width:767px) {
         justify-content: center;
     }
@@ -77,14 +76,13 @@
     @extend %list;
 }
 
-.employee-social-list__item,
-.company-social-list__item {
+.social-list__item
+ {
     width: 44px;
     height: 44px;
 }
 
-.employee-social-list__link,
-.company-social-list__link {
+.social-list__link {
     width: 100%;
     height: 100%;
 

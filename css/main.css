@@ -23,16 +23,14 @@
   margin: -1px;
 }
 
-.address-list, .employee-social-list,
-.company-social-list, .team-list, .examples-list, .advantages-list, .work-list, .filter-list, .site-nav,
+.address-list, .social-list, .team-list, .examples-list, .advantages-list, .work-list, .filter-list, .site-nav,
 .contacts {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.subscribe-form__button, .employee-social-list__link,
-.company-social-list__link, .examples-list__description, .advantages-list__icon, .main-section .main-section__button, .main-section, .modal-window__button {
+.subscribe-form__button, .social-list__link, .examples-list__description, .advantages-list__icon, .main-section .main-section__button, .main-section, .modal-window__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,20 +111,21 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.25);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .backdrop {
     overflow-y: scroll;
+    padding: 15px;
   }
 }
 
 .modal-window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   background-color: var(--btn-text-color);
   border-radius: 4px;
 }
@@ -365,7 +364,9 @@ textarea:focus {
     padding-left: 40px;
   }
   .mobile-menu.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .mobile-nav,
 .mobile-contacts {
@@ -376,21 +377,17 @@ textarea:focus {
   .mobile-nav {
     flex-direction: column;
     display: flex;
-    height: 32vh;
     justify-content: space-between;
+  }
+  .mobile-nav__item:not(:last-child) {
+    margin-bottom: 32px;
   }
   .mobile-contacts {
     flex-direction: column;
     display: flex;
-    height: 36vh;
     justify-content: flex-end;
     gap: 15px;
-  }
-  .mobile-contact--flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 54vh;
+    margin-bottom: 64px;
   }
 }
 .mobile-nav__link {
@@ -439,6 +436,10 @@ textarea:focus {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-links__link {
@@ -799,7 +800,6 @@ textarea:focus {
 
 @media screen and (max-width: 767px) {
   .filter-list {
-    width: 326px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -1150,36 +1150,30 @@ textarea:focus {
   }
 }
 
-.employee-social-list,
-.company-social-list {
+.social-list {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 @media screen and (max-width: 767px) {
-  .employee-social-list,
-.company-social-list {
+  .social-list {
     justify-content: center;
   }
 }
 
-.employee-social-list__item,
-.company-social-list__item {
+.social-list__item {
   width: 44px;
   height: 44px;
 }
 
-.employee-social-list__link,
-.company-social-list__link {
+.social-list__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   fill: var(--social-links-fill);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.employee-social-list__link:hover, .employee-social-list__link:focus,
-.company-social-list__link:hover,
-.company-social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--order-btn-active);
   fill: var(--btn-text-color);
   outline: none;
@@ -1338,7 +1332,7 @@ textarea:focus {
   }
 }
 
-.company-social-list__link--bg {
+.social-list__link--bg {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
