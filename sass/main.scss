@@ -2,10 +2,13 @@
 @import 'utils/visually-hidden';
 @import 'utils/placeholders';
 @import 'utils/mixin';
+@import 'utils/mixin';
+
 
 @import 'base/base';
 @import 'base/container';
 @import 'base/section';
+@import 'base/fonts';
 
 @import 'components/sectionTitle';
 @import 'components/modalWindow';
